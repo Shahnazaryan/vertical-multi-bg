@@ -1,0 +1,30 @@
+.#{$class-prefix}bgc-half{
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+.#{$class-prefix}bgc-col{
+  padding-top: $section__space / 2;
+  padding-bottom: $section__space / 2;
+}
+@media screen and (min-width: $media-min-lg) {
+  .#{$class-prefix}bgc-half{
+    &:before, &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: $media-max-lg){
+  .#{$class-prefix}bgc-col{
+    padding-top: $section__space / 3;
+    padding-bottom: $section__space / 3;
+  }
+}
+@import "for-2-cols";
+@import "for-3-cols";

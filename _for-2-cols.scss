@@ -1,0 +1,22 @@
+.bgc-2n {
+  .#{$class-prefix}bgc-col:nth-child(1){
+    background-color: #0086b3;
+  }
+  .#{$class-prefix}bgc-col:nth-child(2){
+    background-color: #18b327;
+  }
+}
+
+@media screen and (min-width: $media-min-lg) {
+  .#{$class-prefix}bgc-half.bgc-2n{
+    &:before{
+      background-color: #0086b3;
+      left: 0;
+    }
+    &:after{
+      background-color: #18b327;
+      right: 0;
+    }
+  }
+}
+

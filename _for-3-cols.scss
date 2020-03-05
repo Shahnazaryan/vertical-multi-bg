@@ -1,0 +1,25 @@
+.bgc-3n {
+  .#{$class-prefix}bgc-col:nth-child(1){
+    background-color: #0086b3;
+  }
+  .#{$class-prefix}bgc-col:nth-child(2){
+    background-color: #18b327;
+  }
+  .#{$class-prefix}bgc-col:nth-child(3){
+    background-color: #b34b23;
+  }
+}
+
+@media screen and (min-width: $media-max-lg) {
+  .#{$class-prefix}bgc-half.bgc-3n{
+    &:before{
+      background-color: #0086b3;
+      left: 0;
+    }
+    &:after{
+      background-color: #b34b23;
+      right: 0;
+    }
+  }
+}
+
